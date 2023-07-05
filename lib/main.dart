@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interval_progress_bar_test/interval_progress_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -63,14 +64,9 @@ class _MyHomePageState extends State<MyHomePage> {
              Text(
               'You have pushed the button this many times:',
             ),
-    
+            IntervalProgressBar(),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

@@ -1,14 +1,15 @@
 
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-class IntervalProgressBart extends StatefulWidget {
-  const IntervalProgressBart({Key? key}) : super(key: key);
+
+class IntervalProgressBar extends StatefulWidget {
+  const IntervalProgressBar({Key? key}) : super(key: key);
 
   @override
-  State<IntervalProgressBart> createState() => _IntervalProgressBartState();
+  State<IntervalProgressBar> createState() => _IntervalProgressBarState();
 }
 
-class _IntervalProgressBartState extends State<IntervalProgressBart> {
+class _IntervalProgressBarState extends State<IntervalProgressBar> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -21,7 +22,10 @@ class _IntervalProgressBartState extends State<IntervalProgressBart> {
   }
 
   Widget _intervalBar(){
-    return const Column(
+    return  Column(
+      children: [
+        _interval(),
+      ],
 
     );
   }
@@ -30,6 +34,13 @@ class _IntervalProgressBartState extends State<IntervalProgressBart> {
     return const Text(
       '1.0',
     );
+  }
+
+  Widget _interval(){
+    return const ColoredBox(
+			color: Colors.green,
+			child: Text('Colored Box'),
+		);
   }
 
  

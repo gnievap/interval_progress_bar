@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 class Interval extends CustomPainter {
+  
   @override
   void paint(Canvas canvas, Size size) {
     var paint1 = Paint()
