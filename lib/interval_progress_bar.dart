@@ -10,6 +10,7 @@ class IntervalProgressBar extends StatefulWidget {
 }
 
 class _IntervalProgressBarState extends State<IntervalProgressBar> {
+  //List colors = [Colors.red, Colors.green, Colors.amber, Colors.blue]; 
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -37,13 +38,17 @@ class _IntervalProgressBarState extends State<IntervalProgressBar> {
   }
 
   Widget _interval(){
-    return const ColoredBox(
-			color: Colors.green,
-			child: Text('Colored Box'),
-		);
+    //const Colors color = colors[colorType];
+    return const SizedBox(
+      width: 42.0,
+      height: 10.0,
+      child:  DecoratedBox(
+        //decoration = decoration ?? (color != null ? BoxDecoration(color: color) : null),
+        decoration: BoxDecoration(
+          color: Colors.amber,
+        ),
+      ),
+    );
   }
-
- 
-
   
 }
