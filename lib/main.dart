@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
              Text(
               'You have pushed the button this many times:',
             ),
-            IntervalProgressBar(),
+            IntervalProgressBar(value: 1,),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
